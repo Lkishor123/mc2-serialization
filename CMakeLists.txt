@@ -10,7 +10,6 @@ set(FLATBUFFERS_INSTALL_LOCATION ${CMAKE_CURRENT_BINARY_DIR}/flatbuffers)
 ExternalProject_Add(flatbuffers
     GIT_REPOSITORY https://github.com/google/flatbuffers.git
     GIT_TAG v1.7.0
-    GIT_SHALLOW TRUE
     CMAKE_ARGS -G "Unix Makefiles"
                -DFLATBUFFERS_BUILD_TESTS=OFF
                -DFLATBUFFERS_BUILD_FLATLIB=OFF
